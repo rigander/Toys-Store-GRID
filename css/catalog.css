@@ -33,7 +33,6 @@ h2 {
   height: 100px;
   border: 2px dashed;
   text-align: start;
-  margin: 10px;
   text-align: center;
 }
 
@@ -52,38 +51,32 @@ h2 {
 .items {
   display: grid;
   padding: 20px;
+  margin: 10px;
   grid-template-rows: [start] 1fr [row2] 1fr [row-end];
   grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
+  justify-items: start;
+  align-items: start;
 }
 
 .item {
   text-align: center;
   padding: 25px;
   border: 2px dashed black;
+  margin: 10px;
 }
 
 .grid__item_1 {
   color: chartreuse;
-  order: 3;
+  align-self: stretch;
+  justify-self: stretch;
 }
 
 .grid__item_2 {
-  order: 2;
+  justify-self: end;
+  align-self: end;
 }
 
 .grid__item_3 {
-  order: 4;
-}
-
-.grid__item_4 {
-  order: 1;
-}
-
-.grid__item_5 {
-  order: 5;
-}
-
-.grid__item_6 {
-  order: 6;
+  margin: auto;
 }
 /*# sourceMappingURL=catalog.css.map */
