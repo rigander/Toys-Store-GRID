@@ -52,8 +52,8 @@ h2 {
 .items {
   display: grid;
   padding: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 100px);
+  grid-template-rows: [start] 1fr [row2] 1fr [row-end];
+  grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
 }
 
 .item {
@@ -63,7 +63,8 @@ h2 {
 }
 
 .grid__item_1 {
-  grid-row-start: span 2;
-  grid-column-start: span 3;
+  grid-row-start: start;
+  grid-column-start: col3;
+  color: chartreuse;
 }
 /*# sourceMappingURL=catalog.css.map */
