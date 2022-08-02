@@ -63,8 +63,27 @@ h2 {
 }
 
 .grid__item_1 {
-  grid-row-start: start;
-  grid-column-start: col3;
   color: chartreuse;
+  order: 3;
+}
+
+.grid__item_2 {
+  order: 2;
+}
+
+.grid__item_3 {
+  order: 4;
+}
+
+.grid__item_4 {
+  order: 1;
+}
+
+.grid__item_5 {
+  order: 5;
+}
+
+.grid__item_6 {
+  order: 6;
 }
 /*# sourceMappingURL=catalog.css.map */
