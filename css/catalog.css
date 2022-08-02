@@ -54,29 +54,17 @@ h2 {
   margin: 10px;
   grid-template-rows: [start] 1fr [row2] 1fr [row-end];
   grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
-  justify-items: start;
-  align-items: start;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
 .item {
   text-align: center;
   padding: 25px;
   border: 2px dashed black;
-  margin: 10px;
 }
 
 .grid__item_1 {
   color: chartreuse;
-  align-self: stretch;
-  justify-self: stretch;
-}
-
-.grid__item_2 {
-  justify-self: end;
-  align-self: end;
-}
-
-.grid__item_3 {
-  margin: auto;
 }
 /*# sourceMappingURL=catalog.css.map */
