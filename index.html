@@ -9,32 +9,73 @@
 </head>
 <body>
 <div class="wrapper">
-    <div>Omnium Rerum Principia Parva Sunt</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-</div>
-<h2>Grid template areas</h2>
-<div class="grid-wrapper">
-    <header class="grid-header">
-        Header
+    <header class="header">
+        <nav class="header-nav">
+            <ul>
+                    <li><a href="/">О компании</a></li>
+                    <li><a href="/">Каталог</a></li>
+                    <li><a href="/">Доставка</a></li>
+                    <li><a href="/">Наши магазины</a></li>
+                    <li><a href="/">Оптовикам</a></li>
+                    <li><a href="/">Контакты</a></li>
+                </ul>
+            <input type="text" placeholder="поиск по каталогу">
+        </nav>
+        <div class="header-content">
+            <div class="header-content__logo">
+                <img src="img/content-img/logo.png" alt="img">
+            </div>
+            <div class="header-content-contact__tel">
+                <img src="/img/content-img/phone_1.png" alt="phone">
+                <span>(495) <span class="tel-red">234-22-33</span></span>
+                <span>, (495) <span class="tel-red">234-22-35</span></span>
+            </div>
+            <div class="header-content-contact__email-icq">
+                <div class="email">
+                    <img id="email" src="/img/content-img/mail.png" alt="email">
+                    <a href="/">Написать сообщение</a></div>
+                <div class="icq">
+                    <img id="icq" src="/img/content-img/icq.png" alt="icq">
+                    <span>288-22-08</span>
+                </div>
+            </div>
+            <div class="header-content__cart">
+                <img src="/img/content-img/shop_cart.png" alt="cart">
+                <span>В вашей корзине пусто</span>
+            </div>
+            <div class="header-content__private-cabinet">
+                <img src="/img/content-img/padlock_open.png" alt="padlock">
+                <a href="/">Личный кабинет</a>
+            </div>
+        </div>
     </header>
-    <aside class="grid-side">
-        Side-bar
-    </aside>
-    <main class="grid-content">
-        Content
+    <main class="main">
+        <aside class="main-aside">
+            <nav class="aside-nav"></nav>
+            <section class="aside-articles">
+                <article class="aside-article__one"></article>
+                <article class="aside-article__two"></article>
+                <article class="aside-article__three"></article>
+                <input type="submit" class="submit" value="send">
+            </section>
+            <section class="aside-banners">
+                <div class="aside-banner__top"></div>
+                <div class="aside-banner__bottom"></div>
+            </section>
+        </aside>
+        <div class="main-content">
+            <div class="main-content__breadcrumbs"></div>
+            <div class="main-content__filter-by-tags"></div>
+            <div class="main-content__sort-by-price-date"></div>
+            <section class="main-content__products"></section>
+            <div class="main-content__page-nav"></div>
+            <article class="main-content__about-company"></article>
+        </div>
     </main>
-</div>
-<div class="items">
-    <div class="grid__item_1 item">1</div>
-    <div class="grid__item_2 item">2</div>
-    <div class="grid__item_3 item">3</div>
-    <div class="grid__item_4 item">4</div>
-    <div class="grid__item_5 item">5</div>
-    <div class="grid__item_6 item">6</div>
+    <footer class="footer">
+        <div class="footer-nav"></div>
+        <div class="footer-contacts"></div>
+    </footer>
 </div>
 </body>
 </html>
