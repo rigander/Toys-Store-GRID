@@ -75,8 +75,22 @@ body {
   order: 2;
   align-self: end;
   margin-left: 52px;
-  padding-top: 48px;
+  padding-top: 43px;
   font-size: 20px;
+  display: inline-grid;
+  grid-template: 1fr/14px 150px 145px;
+  align-items: center;
+}
+.header-content-contact__tel .first-number {
+  padding-left: 10px;
+}
+.header-content-contact__tel .second-number {
+  padding-left: 5px;
+}
+.header-content-contact__tel p {
+  margin: 0;
+  display: inline;
+  color: black;
 }
 
 .tel-red {
@@ -85,7 +99,15 @@ body {
 
 .header-content__cart {
   order: 3;
-  align-self: center;
+  align-self: end;
+  font-size: 13px;
+  color: #727272;
+  display: inline-grid;
+  grid-template: 20px/25px 140px;
+  align-items: center;
+}
+.header-content__cart img {
+  padding-right: 5px;
 }
 
 .header-content-contact__email-icq {
@@ -95,7 +117,7 @@ body {
   grid-column: 2/4;
   order: 4;
   margin-left: 52px;
-  padding-top: 3px;
+  padding-top: 10px;
 }
 .header-content-contact__email-icq .email {
   display: inline-grid;
@@ -105,18 +127,33 @@ body {
 .header-content-contact__email-icq .email a {
   padding-right: 0;
 }
+.header-content-contact__email-icq .email a:hover {
+  color: #da501a;
+}
 .header-content-contact__email-icq .icq {
   display: inline-grid;
   align-items: center;
   grid-template: 20px/25px 1fr;
+  padding-left: 20px;
 }
 .header-content-contact__email-icq a {
-  text-decoration: none;
   color: #4f4f4f;
 }
 
 .header-content__private-cabinet {
   order: 5;
+  padding-top: 11px;
+  padding-left: 2px;
+  display: inline-grid;
+  grid-template: 17px/24px 120px;
+  align-items: center;
+  font-size: 13px;
+}
+.header-content__private-cabinet a {
+  color: #727272;
+}
+.header-content__private-cabinet a:hover {
+  color: #da501a;
 }
 
 .main {
