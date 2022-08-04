@@ -53,29 +53,132 @@
             </div>
         </div>
     </header>
-    <main class="main">
+    <div class="gasket"></div>
+    <div class="main">
         <aside class="main-aside">
-            <nav class="aside-nav"></nav>
-            <section class="aside-articles">
-                <article class="aside-article__one"></article>
-                <article class="aside-article__two"></article>
-                <article class="aside-article__three"></article>
-                <input type="submit" class="submit" value="send">
-            </section>
-            <section class="aside-banners">
-                <div class="aside-banner__top"></div>
-                <div class="aside-banner__bottom"></div>
-            </section>
+            <nav class="aside-nav">
+                <ul class="main-ul">
+                    <li class="main-li"><a class="main-a" href="/">Автомодели</a></li>
+                    <li class="main-li"><a class="main-a" href="/">Самолеты</a></li>
+                    <li class="main-li" id="helicopter"><a class="main-a" href="/">Вертолеты</a></li>
+                        <ul class="inner-ul">
+                            <li class="inner-li">&#8213; <a class="inner-a" href="/"> Для начинающих(Соосные)</a></li>
+                            <li class="inner-li">&#8213; <a class="inner-a" href="/"> С электродвигателем</a></li>
+                            <li class="inner-li">&#8213; <a class="inner-a" href="/"> Вертолеты с ДВС</a></li>
+                            <li class="inner-li">&#8213; <a class="inner-a" href="/"> Вертолеты Mikado</a></li>
+                        </ul>
+                    <li class="main-li"><a class="main-a" href="/">Аккумуляторы, кабели</a></li>
+                    <li class="main-li"><a class="main-a" href="/">Аппаратура</a></li>
+                    <li class="main-li"><a class="main-a" href="/">Инструмент, материалы</a></li>
+                    <li class="main-li"><a class="main-a" href="/">Винты, крепеж, клей</a></li>
+                    <li class="main-li"><a class="main-a" href="/">Двигатели ДВС</a></li>
+                    <li class="main-li"><a class="main-a" href="/">Электродвигатели</a></li>
+                    <li class="main-li last"><a class="main-a" href="/">Катеры, яхта</a></li>
+                </ul>
+            </nav>
+            <div class="aside-articles-banners__wrapper">
+                <section class="aside-articles">
+                    <article class="aside-article__one">
+                        <p class="date">12.10.2011</p>
+                        <a href="/">Много скидок!</a>
+                        <p>Скоро ноябрь, а это значит, что скоро вас ждет большое
+                            количе- ство скидок в связи с нашим юбелеем.</p>
+                    </article>
+                    <article class="aside-article__two">
+                        <p class="date">12.10.2011</p>
+                        <a href="">Обменяй старое на новое!</a>
+                        <p>Скоро ноябрь, а это значит, что скоро вас ждет большое
+                            количе- ство скидок в связи с нашим юбелеем.</p>
+                    </article>
+                    <article class="aside-article__three">
+                        <p class="date">12.10.2011</p>
+                        <a href="">Обновление в каталогах!</a>
+                        <p>Скоро ноябрь, а это значит, что скоро вас ждет большое
+                            количе- ство скидок в связи с нашим юбелеем.</p>
+                    </article>
+                    <input type="submit" class="submit" value="Написать нам">
+                </section>
+                <section class="aside-banners">
+                    <div class="aside-banner__top"></div>
+                    <div class="aside-banner__bottom"></div>
+                </section>
+            </div>
         </aside>
         <div class="main-content">
-            <div class="main-content__breadcrumbs"></div>
-            <div class="main-content__filter-by-tags"></div>
-            <div class="main-content__sort-by-price-date"></div>
-            <section class="main-content__products"></section>
+            <div class="main-content__breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li><a class="link-main-page" href="/">Главная</a></li>
+                    <p class="arrow-right">&#8594;</p>
+                    <li><a class="link-catalog-page">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="wrapper-filter-by-tags">
+                <div class="main-content__filter-by-tags">
+                    <ul class="filter-by-tags">
+                        <li id="show">показать:</li>
+                        <li class="tags"><a href="">автомодели</a></li>
+                        <li class="tags"><a href="">самолеты</a></li>
+                        <li class="tags"><a href="">вертолеты</a></li>
+                        <li class="tags"><a href="">аккумуляторы кабели</a></li>
+                        <li class="tags"><a href="">аппаратура</a></li>
+                        <li class="tags instrument"><a href="">инструмент, материалы</a></li>
+                        <li class="tags screws"><a href="">винты, крепеж, клей</a></li>
+                        <li class="plus-tag"><a href="">+</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content__sort-by-price-date">
+                <ul class="sort-by-price">
+                    <li class="sort-by">сортировать по:</li>
+                    <li class="date-added"><a href="">дате добавления &#8595;</a></li>
+                    <li class="price-h-l"><a href="">стоимости</a> &#8593;</li>
+                </ul>
+            </div>
+            <section class="main-content__products">
+                <ul class="products-list">
+                    <li class="product car"><a href="/"><img src="/img/content-img/items/car.png" alt="">
+                        <div class="price price-car">18480 UAH</div>
+                    CYCLONE D4 WORLD CHAMPIONSHIP KIT</a></li>
+                    <li class="product plane"><a href="/"><img src="/img/content-img/items/plane.png" alt="">
+                        <div class="price">5712 UAH</div>
+                    Кордовая модель-копия PT-19 Profile Control Line 36 ARF</a></li>
+                    <li class="product helicopter"><a href=""><img src="/img/content-img/items/helicopter.png" alt="">
+                        <div class="price">18240 UAH</div>
+                    Электрический мини-вертолет HM 60#B</a></li>
+                    <li class="product car"><a href=""><img src="/img/content-img/items/car.png" alt="">
+                        <div class="price">18480 UAH</div>
+                    CYCLONE D4 WORLD CHAMPIONSHIP KIT</a></li>
+                    <li class="product helicopter"><a href=""><img src="/img/content-img/items/helicopter.png" alt="">
+                        <div class="price">18240 UAH</div>
+                    Электрический мини-вертолет HM 60#B</a></li>
+                    <li class="product plane"><a href=""><img src="/img/content-img/items/plane.png" alt="">
+                        <div class="price">5712 UAH</div>
+                    Кордовая модель-копия PT-19 Profile Control Line 36 ARF</a></li>
+                    <li class="product helicopter"><a href=""><img src="/img/content-img/items/helicopter.png" alt="">
+                        <div class="price">18240 UAH</div>
+                    Электрический мини-вертолет HM 60#B</a></li>
+                    <li class="product plane"><a href=""><img src="/img/content-img/items/plane.png" alt="">
+                        <div class="price">5712 UAH</div>
+                    Кордовая модель-копия PT-19 Profile Control Line 36 ARF</a></li>
+                    <li class="product car"><a href=""><img src="/img/content-img/items/car.png" alt="">
+                        <div class="price">18480 UAH</div>
+                    CYCLONE D4 WORLD CHAMPIONSHIP KIT</a></li>
+                    <li class="product car"><a href=""><img src="/img/content-img/items/car.png" alt="">
+                        <div class="price">18480 UAH</div>
+                    CYCLONE D4 WORLD CHAMPIONSHIP KIT</a></li>
+                    <li class="product helicopter"><a href=""><img src="/img/content-img/items/helicopter.png" alt="">
+                        <div class="price">18240 UAH</div>
+                    Электрический мини-вертолет HM 60#B</a></li>
+                    <li class="product plane"><a href=""><img src="/img/content-img/items/plane.png" alt="">
+                        <div class="price">5712 UAH</div>
+                    Кордовая модель-копия PT-19 Profile Control Line 36 ARF</a></li>
+                </ul>
+            </section>
             <div class="main-content__page-nav"></div>
             <article class="main-content__about-company"></article>
         </div>
-    </main>
+    </div>
+    <div class="gasket_bottom"></div>
     <footer class="footer">
         <div class="footer-nav"></div>
         <div class="footer-contacts"></div>

@@ -1,0 +1,32 @@
+//BREADCRUMBS
+.main-content__breadcrumbs{
+  background-color: rgb(248, 248, 250);
+}
+.breadcrumbs{
+  display: grid;
+  grid-template: 15px / 68px 30px 60px;
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+  }
+  .link-main-page{
+    font-size: 14px;
+    color: #e46c33;
+    text-decoration: none;
+    border-bottom: 1px solid #e46c33;
+  }
+  .link-catalog-page{
+    font-size: 14px;
+    color: #434243;
+  }
+  .link-catalog-page:hover{
+    cursor: default;
+    user-select: none;
+  }
+}
+.arrow-right{
+  margin: 0;
+  color: #434243;
+  user-select: none;
+}

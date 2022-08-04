@@ -10,13 +10,13 @@
     display: grid;
     justify-content: space-between;
     align-items: center;
-    grid-template: 48px / 570px 229px;
+    grid-template: 48px / 610px 229px;
     background-color: #4f4f4f;
     color: #e2e2e2;
     ul{
       display: grid;
       justify-content: space-between;
-      grid-template: 15px / 72px 48px 55px 95px 66px 58px;
+      grid-template: 15px / 78px 53px 65px 103px 66px 65px;
       list-style: none;
       height: 22px;
       padding: 0;
@@ -60,7 +60,7 @@
   padding-top: 43px;
   font-size: 20px;
   display: inline-grid;
-  grid-template: 1fr / 14px 150px 145px;
+  grid-template: 1fr / 14px 160px 155px;
   align-items: center;
   .first-number{
     padding-left: 10px;
@@ -91,7 +91,7 @@
 }
 .header-content-contact__email-icq{
   display: inline-grid;
-  grid-template: 1fr / 150px 100px;
+  grid-template: 1fr / 155px 105px;
   font-size: 13px;
   grid-column: 2 / 4;
   order: 4;

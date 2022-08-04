@@ -1,0 +1,132 @@
+//ASIDE
+
+
+.aside-nav{
+  background-color: rgba(255, 255, 255, 0.79);
+  .main-ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .main-li{
+      box-sizing: border-box;
+      width: 210px;
+      height: 32px;
+      background-color: #e9ebee;
+      margin: 0 0 2px 29px;
+      padding: 5px 0 0 16px;
+    }
+    .last{
+      margin-bottom: 0;
+    }
+    .main-li:active{
+      background-color: #e26b34;
+      .main-a{
+        color: #ffffff;
+        border: none;
+      }
+    }
+    .main-a{
+      color: #4f4f4f;
+      font-size: 14px;
+      text-decoration: none;
+      border-bottom: 1px solid #4f4f4f;
+    }
+    .main-li:hover{
+      cursor: pointer;
+      a{
+        color: #ec6c39;
+        border-bottom: #ec6c39 1px solid;
+      }
+    }
+    #helicopter{
+      background-color: #ed6d3b;
+      a{
+        color: white;
+        border: none;
+      }
+      a:hover{
+        color: white;
+      }
+    }
+    .inner-ul{
+      margin: 0 0 0 45px;
+      padding: 5px 0 17px 0;
+      list-style: none;
+    }
+    .inner-li{
+      color: #8c8c8c;
+      padding-top: 3px;
+    }
+    .inner-a{
+      font-size: 13px;
+      color: #8c8c8c;
+      text-decoration: none;
+      border-bottom: 1px solid #8c8c8c;
+    }
+    .inner-li:hover{
+      color: #da501a;
+      border-bottom-color: #da501a;
+      cursor: pointer;
+      .inner-a{
+        color: #da501a;
+        border-bottom-color: #da501a;
+      }
+    }
+  }
+}
+.aside-articles-banners__wrapper{
+  width: 261px;
+  background-color: #f6f6f6;
+}
+.aside-articles{
+  width: 197px;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  .date{
+    font-size: 12px;
+    color: #898989;
+    margin: 0;
+  }
+  a{
+    font-size: 14px;
+    color: #4f4f4f;
+    text-decoration: none;
+    border-bottom: solid 1px #4f4f4f;
+  }
+  p{
+    font-size: 13px;
+    color: #7d7d7d;
+    margin: 5px 0 18px 0;
+    word-wrap: break-word;
+    word-spacing: -1px;
+  }
+}
+.submit{
+  margin: 40px 0 30px 0;
+  padding-right: 40px;
+  width: 210px;
+  height: 48px;
+  background: #ec6c39 url("/img/content-img/pencil.png") no-repeat scroll 88% 50%;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+}
+.submit:active{
+  background-color: rgb(183, 218, 26);
+  color: #555454;
+}
+.submit:hover{
+  cursor: pointer;
+}
+.aside-banner__top,
+.aside-banner__bottom{
+  width: 210px;
+  height: 245px;
+  background-color: #bcbcbd;
+  margin: 0 0 29px 29px;
+}
+.aside-banner__bottom{
+  margin-bottom: 0;
+}
