@@ -1,0 +1,62 @@
+//SORT-BY TAGS
+
+.wrapper-filter-by-tags{
+  height: 67px;
+  width: 698px;
+  padding-top: 14px;
+  background-color: #fafafb;
+}
+.main-content__filter-by-tags{
+  background-color: #4d4d4e;
+  width: 656px;
+}
+.filter-by-tags{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template: 33.5px 33.5px / 90px 93px 79px 85px 143px 93px;
+  #show{
+    margin-left: 13px;
+    color: #ffffff;
+    align-self: center;
+    cursor: default;
+    user-select: none;
+  }
+  .tags{
+    color: whitesmoke;
+    font-size: 13px;
+    height: 21px;
+    background-image: linear-gradient(to top, #d8d8d8, #fff);
+    margin: 8px 0 0 5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 3px;
+  }
+  a{
+    text-decoration: none;
+    color: #4d4d4e;
+    font-size: 13px;
+  }
+  a:hover{
+    color: rgb(226, 107, 52);
+  }
+  .instrument{
+    grid-column: 2 / 4;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    width: 154px;
+  }
+  .screws{
+    grid-column: 4 / 6;
+    margin: 3px 0 10px -8px;
+    width: 126px;
+  }
+}
+.plus-tag{
+  a{
+    font-size: 24px;
+    color: whitesmoke;
+    margin-left: -100px;
+  }
+}

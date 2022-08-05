@@ -339,6 +339,10 @@ body {
   grid-template: 1454px/261px 698px;
 }
 
+.main-content {
+  background-color: #fafafb;
+}
+
 .gasket {
   border-top: 7px solid rgb(231, 233, 237);
   border-left: 28px solid rgb(231, 233, 237);
@@ -387,6 +391,9 @@ body {
   color: #4d4d4e;
   font-size: 13px;
 }
+.filter-by-tags a:hover {
+  color: rgb(226, 107, 52);
+}
 .filter-by-tags .instrument {
   grid-column: 2/4;
   margin-top: 3px;
@@ -408,6 +415,7 @@ body {
 .main-content__sort-by-price-date {
   width: 300px;
   height: 40px;
+  background-color: #fafafb;
 }
 
 .sort-by-price {
@@ -420,6 +428,9 @@ body {
 .sort-by-price a {
   text-decoration: none;
   color: #5c5c5c;
+}
+.sort-by-price a:hover {
+  color: #3263cd;
 }
 
 .sort-by {
@@ -442,18 +453,34 @@ body {
   border-bottom: 1px solid #5c5c5c;
 }
 
+.main-content__products {
+  width: 670px;
+  height: 1021px;
+  background-color: #ffffff;
+}
+
 .products-list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: grid;
+  grid-template: repeat(4, 240px)/repeat(3, 218px);
 }
 .products-list a {
   text-decoration: none;
 }
 
-.price {
-  width: 140px;
+.product {
+  padding: 25px 0 0 10px;
+  width: 223px;
+  height: 223px;
+  position: relative;
+}
+.product .price {
+  position: absolute;
+  top: 144px;
+  left: 110px;
+  width: 106px;
   height: 30px;
   background-color: #4d4d4e;
   color: #f3f2f0;
@@ -461,8 +488,128 @@ body {
   border: none;
   border-radius: 2px;
   text-align: center;
-  text-decoration: none;
   padding-top: 4px;
+}
+.product .currency {
+  font-size: 18px;
+}
+.product img {
+  margin-bottom: 12px;
+}
+.product a {
+  color: #e27d55;
+  text-align: center;
+}
+.product a:hover {
+  color: yellowgreen;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 1px solid #e27d55;
+  font-size: 14px;
+}
+
+.cyclone {
+  width: 148px;
+  margin: 10px auto 3px;
+}
+
+.title-bottom {
+  width: 195px;
+  margin: 0 auto;
+}
+
+.cord {
+  width: 160px;
+  margin: 0 auto 3px;
+}
+
+.pt-19 {
+  width: 185px;
+  margin: 0 auto 3px;
+}
+
+.arf {
+  width: 35px;
+  margin: 0 auto;
+}
+
+.electric {
+  width: 100px;
+  margin: 0 auto 3px;
+}
+
+.hm60b {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.pagination {
+  padding: 24px 0 0 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template: 20px/100px repeat(7, 20px) 260px 20px 150px;
+}
+.pagination li {
+  color: #4f4f4f;
+  font-size: 13px;
+}
+.pagination a {
+  color: #4f4f4f;
+  font-size: 13px;
+}
+.pagination a:hover {
+  color: #fb9051;
+}
+
+.page-two {
+  padding: 3px 7px;
+  border: none;
+  border-radius: 1.5px;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.22);
+  background-image: linear-gradient(to top, #ed713b, #ff9555);
+}
+.page-two a,
+.page-two a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pages,
+.dots,
+#page-arrow-left,
+#page-arrow-right,
+#line {
+  cursor: default;
+  user-select: none;
+}
+
+#page-arrow-left {
+  padding-left: 105px;
+}
+
+.next-page,
+.previous-page {
+  text-decoration: none;
+}
+
+.next-page:hover,
+.previous-page:hover {
+  color: #e46c33;
+}
+
+.previous-page-container,
+.next-page-container {
+  border-bottom: 1px solid #4f4f4f;
+}
+
+.previous-page-container:hover,
+.next-page-container:hover {
+  border-bottom: 1px solid #fb9051;
 }
 
 .gasket_bottom {

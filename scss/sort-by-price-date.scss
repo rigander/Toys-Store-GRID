@@ -1,0 +1,38 @@
+//SORT-BY PRICE DATE
+
+.main-content__sort-by-price-date{
+  width: 300px;
+  height: 40px;
+  background-color: #fafafb;
+}
+.sort-by-price{
+  font-size: 13px;
+  display: grid;
+  grid-template: 19px / 110px 122px 100px;
+  list-style: none;
+  padding-left: 8px;
+  a{
+    text-decoration: none;
+    color: #5c5c5c;
+  }
+  a:hover{
+    color: #3263cd;
+  }
+}
+.sort-by{
+  align-self: center;
+}
+.date-added{
+  background-color: #a6a6a6;
+  padding-left: 5px;
+  padding-top: 1px;
+  border: none;
+  border-radius: 1px;
+}
+.price-h-l{
+  padding-left: 8px;
+  color: #5c5c5c;
+  a{
+    border-bottom: 1px solid #5c5c5c;
+  }
+}
