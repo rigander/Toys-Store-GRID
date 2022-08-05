@@ -85,6 +85,7 @@ body {
   display: inline-grid;
   grid-template: 1fr/14px 160px 155px;
   align-items: center;
+  cursor: default;
 }
 .header-content-contact__tel .first-number {
   padding-left: 10px;
@@ -110,6 +111,7 @@ body {
   display: inline-grid;
   grid-template: 20px/25px 140px;
   align-items: center;
+  cursor: default;
 }
 .header-content__cart img {
   padding-right: 5px;
@@ -123,6 +125,7 @@ body {
   order: 4;
   margin-left: 52px;
   padding-top: 10px;
+  cursor: default;
 }
 .header-content-contact__email-icq .email {
   display: inline-grid;
@@ -153,6 +156,7 @@ body {
   grid-template: 17px/24px 120px;
   align-items: center;
   font-size: 13px;
+  cursor: default;
 }
 .header-content__private-cabinet a {
   color: #727272;
@@ -690,9 +694,13 @@ body {
   line-height: 1.5;
   margin: 0;
   padding-right: 23px;
+  cursor: default;
 }
 .footer-contacts p a {
   color: #747474;
+}
+.footer-contacts span {
+  cursor: default;
 }
 .footer-contacts span a {
   color: #747474;

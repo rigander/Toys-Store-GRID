@@ -62,6 +62,7 @@
   display: inline-grid;
   grid-template: 1fr / 14px 160px 155px;
   align-items: center;
+  cursor: default;
   .first-number{
     padding-left: 10px;
   }
@@ -85,6 +86,7 @@
   display: inline-grid;
   grid-template: 20px / 25px 140px;
   align-items: center;
+  cursor: default;
   img{
     padding-right: 5px;
   }
@@ -97,6 +99,7 @@
   order: 4;
   margin-left: 52px;
   padding-top: 10px;
+  cursor: default;
   .email{
     display: inline-grid;
     align-items: center;
@@ -127,6 +130,7 @@
   grid-template: 17px / 24px 120px;
   align-items: center;
   font-size: 13px;
+  cursor: default;
   a{
     color: #727272;
   }
