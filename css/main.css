@@ -1,3 +1,5 @@
+@import "normalize.css";
+@import "reset-styles.css";
 @font-face {
   font-family: ArialMT;
   src: url("/fonts/arial.ttf") format("ttf");
@@ -11,8 +13,8 @@ body {
 }
 
 .wrapper {
-  border: solid 1px grey;
   background-color: rgb(231, 233, 237);
+  border: 1px solid grey;
   grid-area: wrapper;
   min-height: 100%;
   margin: 0 auto;
@@ -303,42 +305,9 @@ body {
   margin-bottom: 0;
 }
 
-.main-content__breadcrumbs {
-  background-color: rgb(248, 248, 250);
-}
-
-.breadcrumbs {
-  display: grid;
-  grid-template: 15px/68px 30px 60px;
-  margin: 0;
-  padding: 0;
-}
-.breadcrumbs li {
-  list-style: none;
-}
-.breadcrumbs .link-main-page {
-  font-size: 14px;
-  color: #e46c33;
-  text-decoration: none;
-  border-bottom: 1px solid #e46c33;
-}
-.breadcrumbs .link-catalog-page {
-  font-size: 14px;
-  color: #434243;
-}
-.breadcrumbs .link-catalog-page:hover {
-  cursor: default;
-  user-select: none;
-}
-
-.arrow-right {
-  margin: 0;
-  color: #434243;
-  user-select: none;
-}
-
 .main {
   margin: 0 37px 0 28px;
+  background-color: #fafafb;
   grid-area: main;
   display: grid;
   grid-template: 1454px/261px 698px;
@@ -348,114 +317,102 @@ body {
   background-color: #fafafb;
 }
 
+.helicopter-beacon {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr;
+}
+.helicopter-beacon h2 {
+  font-size: 24px;
+  color: #010101;
+  cursor: default;
+}
+.helicopter-beacon img {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.specifications {
+  height: 100px;
+  width: 266px;
+  padding: 12px 0;
+  border-top: 1px solid #010101;
+  border-bottom: 1px solid #010101;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #4f4f4f;
+  display: grid;
+  grid-template: repeat(4, 20px)/122px 131px;
+}
+.specifications span {
+  padding-left: 9px;
+  padding-top: 3px;
+  cursor: default;
+}
+.specifications .type, .specifications .name, .specifications .motor, .specifications .motor-type {
+  background-color: #f1f0ef;
+}
+.specifications .name, .specifications .plastic, .specifications .motor-type, .specifications .time {
+  padding-left: 12px;
+}
+
+.price-cart {
+  margin-top: 17px;
+  position: relative;
+  width: 294px;
+  display: grid;
+  grid-template: 30px/57px 71px 1fr 1fr;
+  align-items: center;
+}
+.price-cart .price__ {
+  color: #717171;
+  font-size: 18px;
+}
+.price-cart .price___ {
+  font-size: 22px;
+  color: #010101;
+}
+.price-cart .price____ {
+  padding-left: 5px;
+}
+.price-cart .currency_ {
+  color: #4f4f4f;
+  font-size: 14px;
+}
+.price-cart input {
+  width: 102px;
+  height: 30px;
+  background-color: #4d4d4e;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 13px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+.price-cart input:active {
+  background-color: #e27d55;
+}
+.price-cart input:hover {
+  cursor: pointer;
+}
+
+.triangular {
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-width: 0;
+  border-left-color: #fdfdfe;
+}
+
 .gasket {
   border-top: 7px solid rgb(231, 233, 237);
   border-left: 28px solid rgb(231, 233, 237);
   border-right: 37px solid rgb(231, 233, 237);
   background-color: rgba(255, 255, 255, 0.79);
-}
-
-.wrapper-filter-by-tags {
-  height: 67px;
-  width: 698px;
-  padding-top: 14px;
-  background-color: #fafafb;
-}
-
-.main-content__filter-by-tags {
-  background-color: #4d4d4e;
-  width: 656px;
-}
-
-.filter-by-tags {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template: 33.5px 33.5px/90px 93px 79px 85px 143px 93px;
-}
-.filter-by-tags #show {
-  margin-left: 13px;
-  color: #ffffff;
-  align-self: center;
-  cursor: default;
-  user-select: none;
-}
-.filter-by-tags .tags {
-  color: whitesmoke;
-  font-size: 13px;
-  height: 21px;
-  background-image: linear-gradient(to top, #d8d8d8, #fff);
-  margin: 8px 0 0 5px;
-  text-align: center;
-  box-sizing: border-box;
-  padding-top: 3px;
-}
-.filter-by-tags a {
-  text-decoration: none;
-  color: #4d4d4e;
-  font-size: 13px;
-}
-.filter-by-tags a:hover {
-  color: rgb(226, 107, 52);
-}
-.filter-by-tags .instrument {
-  grid-column: 2/4;
-  margin-top: 3px;
-  margin-bottom: 10px;
-  width: 154px;
-}
-.filter-by-tags .screws {
-  grid-column: 4/6;
-  margin: 3px 0 10px -8px;
-  width: 126px;
-}
-
-.plus-tag a {
-  font-size: 24px;
-  color: whitesmoke;
-  margin-left: -100px;
-}
-
-.main-content__sort-by-price-date {
-  width: 300px;
-  height: 40px;
-  background-color: #fafafb;
-}
-
-.sort-by-price {
-  font-size: 13px;
-  display: grid;
-  grid-template: 19px/110px 122px 100px;
-  list-style: none;
-  padding-left: 8px;
-}
-.sort-by-price a {
-  text-decoration: none;
-  color: #5c5c5c;
-}
-.sort-by-price a:hover {
-  color: #3263cd;
-}
-
-.sort-by {
-  align-self: center;
-}
-
-.date-added {
-  background-color: #a6a6a6;
-  padding-left: 5px;
-  padding-top: 1px;
-  border: none;
-  border-radius: 1px;
-}
-
-.price-h-l {
-  padding-left: 8px;
-  color: #5c5c5c;
-}
-.price-h-l a {
-  border-bottom: 1px solid #5c5c5c;
 }
 
 .main-content__products {
@@ -550,73 +507,6 @@ body {
   margin: 0 auto;
 }
 
-.pagination {
-  padding: 24px 0 0 0;
-  margin: 0;
-  list-style: none;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-template: 20px/100px repeat(7, 20px) 260px 20px 150px;
-}
-.pagination li {
-  color: #4f4f4f;
-  font-size: 13px;
-}
-.pagination a {
-  color: #4f4f4f;
-  font-size: 13px;
-}
-.pagination a:hover {
-  color: #fb9051;
-}
-
-.page-two {
-  padding: 3px 7px;
-  border: none;
-  border-radius: 1.5px;
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.22);
-  background-image: linear-gradient(to top, #ed713b, #ff9555);
-}
-.page-two a,
-.page-two a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.pages,
-.dots,
-#page-arrow-left,
-#page-arrow-right,
-#line {
-  cursor: default;
-  user-select: none;
-}
-
-#page-arrow-left {
-  padding-left: 105px;
-}
-
-.next-page,
-.previous-page {
-  text-decoration: none;
-}
-
-.next-page:hover,
-.previous-page:hover {
-  color: #e46c33;
-}
-
-.previous-page-container,
-.next-page-container {
-  border-bottom: 1px solid #4f4f4f;
-}
-
-.previous-page-container:hover,
-.next-page-container:hover {
-  border-bottom: 1px solid #fb9051;
-}
-
 .main-content__about-company {
   color: #4f4f4f;
 }
@@ -704,4 +594,4 @@ body {
 .footer-contacts span a {
   color: #747474;
 }
-/*# sourceMappingURL=catalog.css.map */
+/*# sourceMappingURL=main.css.map */

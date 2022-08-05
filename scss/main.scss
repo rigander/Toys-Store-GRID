@@ -1,3 +1,5 @@
+@import "normalize.css";
+@import "reset-styles.css";
 
 @font-face {
   font-family: ArialMT;
@@ -13,8 +15,8 @@ body{
   font-weight: normal;
 }
 .wrapper{
-  border: solid 1px grey;
   background-color: rgb(231, 233, 237);
+  border: 1px solid grey;
   grid-area: wrapper;
   min-height: 100%;
   margin: 0 auto;
@@ -29,15 +31,106 @@ body{
 }
 @import "header";
 @import "catalog-aside";
-@import "breadcrumbs";
+
 .main{
   margin: 0 37px 0 28px;
+  background-color: #fafafb;
   grid-area: main;
   display: grid;
   grid-template: 1454px / 261px 698px;
 }
 .main-content{
   background-color: #fafafb;
+}
+
+//HELICOPTER-BEACON
+
+.helicopter-beacon{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  h2{
+    font-size: 24px;
+    color: #010101;
+    cursor: default;
+  }
+  img{
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    align-self: center;
+  }
+}
+.specifications{
+  height: 100px;
+  width: 266px;
+  padding: 12px 0;
+  border-top: 1px solid #010101;
+  border-bottom: 1px solid #010101;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #4f4f4f;
+  display: grid;
+  grid-template: repeat(4, 20px) / 122px 131px;
+  span{
+    padding-left: 9px;
+    padding-top: 3px;
+    cursor: default;
+  }
+  .type,.name,.motor,.motor-type{
+    background-color: #f1f0ef;
+  }
+  .name,.plastic,.motor-type,.time{
+    padding-left: 12px;
+  }
+}
+.price-cart{
+  margin-top: 17px;
+  position: relative;
+  width: 294px;
+  display: grid;
+  grid-template: 30px / 57px 71px 1fr 1fr;
+  align-items: center;
+  .price__{
+    color: #717171;
+    font-size: 18px;
+  }
+  .price___{
+    font-size: 22px;
+    color: #010101;
+  }
+  .price____{
+    padding-left: 5px;
+  }
+  .currency_{
+    color: #4f4f4f;
+    font-size: 14px;
+  }
+  input{
+    width: 102px;
+    height: 30px;
+    background-color: #4d4d4e;
+    border:none;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 13px;
+    padding-right: 20px;
+    margin-left: 10px;
+  }
+  input:active{
+    background-color: #e27d55;
+  }
+  input:hover{
+    cursor: pointer;
+  }
+}
+.triangular{
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-width: 0;
+  border-left-color: #fdfdfe;
 }
 .gasket{
   border-top: 7px solid rgb(231, 233, 237);
@@ -46,8 +139,6 @@ body{
   background-color: rgba(255, 255, 255, 0.79);
 }
 
-@import "sort-by-tags";
-@import "sort-by-price-date";
 
 //PRODUCT_LIST
 .main-content__products{
@@ -136,7 +227,6 @@ body{
   margin: 0 auto;
 }
 
-@import "pagination";
 
 //About company article
 .main-content__about-company{
@@ -174,4 +264,3 @@ body{
 }
 
 @import "footer";
-
