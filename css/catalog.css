@@ -263,6 +263,8 @@ body {
   margin: 5px 0 18px 0;
   word-wrap: break-word;
   word-spacing: -1px;
+  cursor: default;
+  user-select: none;
 }
 
 .submit {
@@ -610,6 +612,32 @@ body {
 .previous-page-container:hover,
 .next-page-container:hover {
   border-bottom: 1px solid #fb9051;
+}
+
+.main-content__about-company {
+  color: #4f4f4f;
+}
+.main-content__about-company h2 {
+  font-size: 24px;
+  margin: 73px 0 17px 0;
+  cursor: default;
+}
+.main-content__about-company .first-p {
+  word-spacing: -0.1px;
+}
+.main-content__about-company p {
+  width: 662px;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+  word-spacing: -1px;
+  cursor: default;
+}
+.main-content__about-company p a {
+  color: #e27d55;
+  text-decoration: none;
+  border-bottom: 1px solid #e27d55;
+  margin-left: 10px;
 }
 
 .gasket_bottom {

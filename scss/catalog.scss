@@ -138,7 +138,31 @@ body{
 
 @import "pagination";
 
-
+.main-content__about-company{
+  color: #4f4f4f;
+  h2{
+    font-size: 24px;
+    margin: 73px 0 17px 0;
+    cursor: default;
+  }
+  .first-p{
+    word-spacing: -0.1px;
+  }
+  p{
+    width: 662px;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+    word-spacing: -1px;
+    cursor: default;
+    a{
+      color: #e27d55;
+      text-decoration: none;
+      border-bottom: 1px solid #e27d55;
+      margin-left: 10px;
+    }
+  }
+}
 
 .gasket_bottom{
   margin-left: 28px;

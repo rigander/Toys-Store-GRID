@@ -100,6 +100,8 @@
     margin: 5px 0 18px 0;
     word-wrap: break-word;
     word-spacing: -1px;
+    cursor: default;
+    user-select: none;
   }
 }
 .submit{
