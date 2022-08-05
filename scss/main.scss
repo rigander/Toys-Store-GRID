@@ -47,15 +47,27 @@ body{
 
 .helicopter-beacon{
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  .arrow-left-big{
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
+  }
+  .arrow-right-big{
+    grid-row: 1 / 4;
+    grid-column: 4 / 5;
+    align-self: center;
+    justify-self: center;
+  }
   h2{
     font-size: 24px;
     color: #010101;
     cursor: default;
   }
-  img{
+  .big-helicopter_img{
     grid-row: 1 / 4;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     align-self: center;
   }
 }
