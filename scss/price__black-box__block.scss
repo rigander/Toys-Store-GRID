@@ -1,0 +1,24 @@
+
+//Product Price (black box)
+
+.price-wrapper{
+  width: 111px;
+  height: 37px;
+  background-color: #4f4f4f;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price{
+  width: 102px;
+  height: 21px;
+  color: #f3f2f0;
+  padding-bottom: 3px;
+}
+.price__currency{
+  font-size: 18px;
+}

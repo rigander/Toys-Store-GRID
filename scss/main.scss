@@ -47,28 +47,31 @@ body{
 
 .helicopter-beacon{
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template: 65px 1fr 99px / 44px 284px 317px 53px;
+  .title-helicopter{
+    height: 52px;
+    h2{
+      font-size: 24px;
+      color: #010101;
+      cursor: default;
+    }
+    h2:first-child{
+      padding-bottom: 5px;
+    }
+  }
   .arrow-left-big{
     grid-row: 1 / 4;
     grid-column: 1 / 2;
-    align-self: center;
-    justify-self: center;
-  }
-  .arrow-right-big{
-    grid-row: 1 / 4;
-    grid-column: 4 / 5;
-    align-self: center;
-    justify-self: center;
-  }
-  h2{
-    font-size: 24px;
-    color: #010101;
-    cursor: default;
+    padding-top: 88px;
   }
   .big-helicopter_img{
     grid-row: 1 / 4;
     grid-column: 3 / 4;
-    align-self: center;
+  }
+  .arrow-right-big{
+    grid-row: 1 / 4;
+    grid-column: 4 / 5;
+    padding-top: 88px;
   }
 }
 .specifications{
@@ -152,92 +155,35 @@ body{
 }
 
 
-//PRODUCT_LIST
-.main-content__products{
+//PRODUCT_LISTS
+//SALE
+.sale{
+  height: 275px;
   width: 670px;
-  height: 1021px;
-  background-color: #ffffff;
-}
-.products-list{
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  background-color: #fdfdfe;
   display: grid;
-  grid-template: repeat(4, 240px) / repeat(3, 218px);
-  a{
+  grid-template: 25px 1fr / 1fr 1fr 1fr;
+  .sale-link{
+    font-size: 16px;
+    color: #000;
     text-decoration: none;
+    border-bottom: 1px solid;
+    grid-row: 1;
+    grid-column: 1/4;
+    width: 92px;
+    height: 16px;
+    align-self: end;
   }
 }
-.product{
-  padding: 25px 0 0 10px;
-  width: 223px;
-  height: 223px;
-  position: relative;
-  .price {
-    position: absolute;
-    top: 144px;
-    left: 110px;
-    width: 106px;
-    height: 30px;
-    background-color: #4d4d4e;
-    color: #f3f2f0;
-    font-size: 24px;
-    border: none;
-    border-radius: 2px;
-    text-align: center;
-    padding-top: 4px;
-  }
-  .currency{
-    font-size: 18px;
-  }
-  img{
-    margin-bottom: 12px;
-  }
-  a{
-    color: #e27d55;
-    text-align: center;
-  }
-  a:hover{
-    color: yellowgreen;
-  }
-}
+@import "product-car";
+@import "product-plane";
+@import "product-helicopter";
 
-//car
-.title{
-  text-align: center;
-  border-bottom: 1px solid #e27d55;
-  font-size: 14px;
-}
-.cyclone{
-  width: 148px;
-  margin: 10px auto 3px;
-}
-.title-bottom{
-  width: 195px;
-  margin: 0 auto;
-}
-//airplane
-.cord{
-  width: 160px;
-  margin: 0 auto 3px;
-}
-.pt-19{
-  width: 185px;
-  margin: 0 auto 3px;
-}
-.arf{
-  width: 35px;
-  margin: 0 auto
-}
-//helicopter
-.electric{
-  width: 100px;
-  margin: 0 auto 3px;
-}
-.hm60b{
-  width: 160px;
-  margin: 0 auto;
-}
+
+
+
+
+
 
 
 //About company article

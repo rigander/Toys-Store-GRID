@@ -1,0 +1,24 @@
+
+//Product plane
+
+@import "product-car";
+.plane{
+  text-align: center;
+  .title-product{
+
+  }
+  .cord, .pt-19, .arf{
+    border-bottom: 1px solid;
+    margin: 0 auto;
+    padding-top: 4px;
+  }
+  .cord{
+    width: 160px;
+  }
+  .pt-19{
+    width: 180px;
+  }
+  .arf{
+    width: 30px;
+  }
+}

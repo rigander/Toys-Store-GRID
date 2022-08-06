@@ -1,0 +1,34 @@
+//PRODUCT-CAR
+
+.product{
+  width: 198px;
+  height: 189px;
+  position: relative;
+  .title-product{
+    height: 34px;
+    width: 185px;
+    color: #e27d55;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .title-product:hover{
+    color: yellowgreen;
+  }
+  .cyclone{
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 13px;
+  }
+  .title-bottom{
+    padding-top: 5px;
+  }
+  .cyclone, .title-bottom{
+    border-bottom: 1px solid;
+  }
+}
+@import "price__black-box__block";
+.price-wrapper{
+  position: absolute;
+  top: 117px;
+  right: 0;
+}
