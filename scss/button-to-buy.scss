@@ -1,0 +1,44 @@
+
+//Button-to-buy
+
+button{
+  position: relative;
+  width: 261px;
+  height: 62px;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.47);
+  border: solid 1px;
+  border-radius: 4px;
+  border-image-source: linear-gradient(to top, #b75f25, #fc9e09);
+  border-image-slice: 1;
+  background-image: linear-gradient(to top, #ea7a2f, #ff993e);
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  input{
+    position: absolute;
+    width: 109px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: 0 2px 1px 0 #421c03;
+    border: solid 1px #c4c4c4;
+    background-image: linear-gradient(to top, #c9c9c9, #f4f4f4), linear-gradient(to bottom, #fff, #fff);
+    font-size: 24px;
+    font-weight: bold;
+    color: #6e6e6e;
+    top: 17%;
+    right: 10px;
+  }
+}
+.price{
+  display: inline-block;
+  position: absolute;
+  top: 22%;
+  left: 12px;
+}
+.gasket_bottom{
+  margin-left: 28px;
+  width: 959px;
+  box-sizing: border-box;
+  border-bottom: 10px solid #e5e7ec;
+  background-color: #f6f6f6;
+}
