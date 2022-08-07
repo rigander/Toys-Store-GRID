@@ -14,6 +14,7 @@ button{
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
+  cursor: pointer;
   input{
     position: absolute;
     width: 109px;
@@ -27,7 +28,18 @@ button{
     color: #6e6e6e;
     top: 17%;
     right: 10px;
+    cursor: pointer;
   }
+  input:hover{
+    background-image: linear-gradient(to top, #c9c9c9, #ec6c39), linear-gradient(to bottom, #fff, #b55d27);
+  }
+  input:active{
+    background-image: linear-gradient(to top, #c9c9c9, #f4f4f4), linear-gradient(to bottom, #fff, rgba(121, 48, 48, 0.8));
+  }
+}
+button:hover{
+  border-image-source: linear-gradient(to top, #fa9d0a, #b65e26);
+  background-image: linear-gradient(to top, #ea7a2f, #f2ff3e);
 }
 .price{
   display: inline-block;
